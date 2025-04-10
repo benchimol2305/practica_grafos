@@ -57,5 +57,7 @@ Crea un pull request. (Es como una solicitud formal que le envías al dueño del
 Contacto
 
 Luis Chirinos - Email - luisemilio2006@gmail.com
+
 Eldi Rangel - Email - eldi456.rangel@gmail.com
+
 Cesar Benchimol - Cesarbenchimoldavila@gmail.com
