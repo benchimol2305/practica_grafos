@@ -91,3 +91,21 @@ void redimensionarAmigos(Usuario* usuario) {
     usuario->amigos = nuevosAmigos;
     usuario->capacidad = nuevaCapacidad;
 }
+
+void agregarAmistad(RedSocial* rs) {
+    char nombre1[50], nombre2[50];
+    
+    cout<<"Ingrese nombre del primer usuario: ";
+    cin.getline(nombre1, 50);
+    
+    cout<<"Ingrese nombre del segundo usuario: ";
+    cin.getline(nombre2, 50);
+    
+    int idx1=buscarUsuario(rs, nombre1);
+    int idx2=buscarUsuario(rs, nombre2);
+    
+    if(idx1==-1||idx2==-1){
+        cout<<"Error: Uno o ambos usuarios no existen\n";
+        return;
+    }
+}
