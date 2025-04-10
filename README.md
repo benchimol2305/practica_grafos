@@ -15,8 +15,11 @@ Una vez compilador ejecutar con el siguiente comando: ./Controlador
 El programa te presentará un menú interactivo donde podrás:
 
   Registrar nuevos usuarios.
+  
   Agregar amistad entre usuarios.
+  
   Mostrar todos los usuarios con sus amistades.
+  
   Salir y liberar la memoria de la red.
 
 Explicacion del programa:
