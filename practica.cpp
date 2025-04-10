@@ -114,4 +114,16 @@ void agregarAmistad(RedSocial* rs) {
             return;
         }
     }
+
+    if (rs->usuarios[idx1].numeAmigos>=rs->usuarios[idx1].capacidad){
+        redimensionarAmigos(&rs->usuarios[idx1]);
+    }
+    rs->usuarios[idx1].amigos[rs->usuarios[idx1].numeAmigos++]=idx2;
+
+    if (rs->usuarios[idx2].numeAmigos >= rs->usuarios[idx2].capacidad){
+        redimensionarAmigos(&rs->usuarios[idx2]);
+    }
+    rs->usuarios[idx2].amigos[rs->usuarios[idx2].numeAmigos++]=idx1;
+    
+    cout <<"Amistad agregada exitosamente!\n";
 }
