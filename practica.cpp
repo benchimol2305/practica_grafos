@@ -19,3 +19,12 @@ struct RedSocial
     int capacidad;
     Usuario* usuarios;
 };
+
+RedSocial* crearRedSocial()
+{
+    RedSocial* rs= new RedSocial;
+    rs->numUsuarios=0;
+    rs->capacidad=2;
+    rs->usuarios= new Usuario[rs->capacidad];
+    return rs;
+}
