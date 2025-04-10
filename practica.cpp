@@ -28,3 +28,20 @@ RedSocial* crearRedSocial()
     rs->usuarios= new Usuario[rs->capacidad];
     return rs;
 }
+
+void redimensionarUsuarios(RedSocial* rs){
+    int nuevaCapacidad= rs->capacidad*2;
+    Usuario* nuevosUsuarios= new Usuario[nuevaCapacidad];
+
+    for (int i = 0; i < rs->numUsuarios; i++)
+    {
+        nuevosUsuarios[i]= rs->usuarios[i];
+    }
+    delete[] rs->usuarios;
+    rs->usuarios= nuevosUsuarios;
+    rs->capacidad= nuevaCapacidad;
+
+    cout<< "la red social se agrando a una capacidad de:" << nuevaCapacidad << " usuarios\n";
+    
+    
+}
