@@ -54,3 +54,26 @@ int buscarUsuario(RedSocial* rs, const char* nombre){
     }
     return -1;
 }
+
+void registrarUsuario(RedSocial* rs){
+    if(rs->numUsuarios >= rs->capacidad){
+        redimensionarUsuarios(rs);
+
+    }
+    Usuario nuevo;
+    cout<< "ingrese nombre del usuario: ";
+    cin.getline(nuevo.nombre, 50);
+
+    cout<< "ingrese la edad del usuario: ";
+    cin>> nuevo.edad;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
+
+    nuevo.numeAmigos=0;
+    nuevo.capacidad=1;
+    nuevo.amigos= new int[1];
+    rs->usuarios[rs->numUsuarios]= nuevo;
+    rs->numUsuarios++;
+
+    cout<< " el usuario se registro de manera correcta /n";
+    
+}
