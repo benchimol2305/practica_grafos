@@ -130,7 +130,7 @@ void agregarAmistad(RedSocial* rs) {
 
 void mostrarRedSocial(RedSocial* rs){
     if(rs->numUsuarios==0){
-        cout<<"La red social está vacía\n";
+        cout<<"La red social está vacia\n";
         return;
     }
     
@@ -161,6 +161,17 @@ void destruirRedSocial(RedSocial* rs){
     
     cout<<"Memoria de la red social liberada\n";
 }
+
 void menu() {
     RedSocial* rs = crearRedSocial();
     int opcion;
+  
+    do {
+        cout << "\n=== RED SOCIAL ===\n";
+        cout << "1. Registrar nuevo usuario\n";
+        cout << "2. Agregar amistad\n";
+        cout << "3. Mostrar todos los usuarios\n";
+        cout << "4. Salir\n";
+        cout << "Seleccione una opción: ";
+        cin >> opcion;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
