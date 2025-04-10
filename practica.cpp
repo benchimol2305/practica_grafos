@@ -127,3 +127,27 @@ void agregarAmistad(RedSocial* rs) {
     
     cout <<"Amistad agregada exitosamente!\n";
 }
+
+void mostrarRedSocial(RedSocial* rs){
+    if(rs->numUsuarios==0){
+        cout<<"La red social está vacía\n";
+        return;
+    }
+    
+    cout<<"\n=== USUARIOS EN LA RED SOCIAL ===\n";
+    for(int i=0;i<rs->numUsuarios; i++){
+        cout<<"Usuario: "<<rs->usuarios[i].nombre<<" ("<<rs->usuarios[i].edad<<" años)\n";
+        cout<<"Amigos ("<<rs->usuarios[i].numeAmigos<<"): ";
+        
+        if(rs->usuarios[i].numeAmigos==0){
+            cout<<"Ninguno";
+        } else{
+            for(int j=0; j<rs->usuarios[i].numeAmigos; j++){
+                int amigoIdx=rs->usuarios[i].amigos[j];
+                cout<<rs->usuarios[amigoIdx].nombre;
+                if (j<rs->usuarios[i].numeAmigos-1)cout<<", ";
+            }
+        }
+        cout<<"\n\n";
+    }
+}
