@@ -5,9 +5,13 @@ Esta practica consiste en una red social super sencilla, implementada en C++ usa
 Empecemos con la instalacion Partiendo de ya tener Visual Studio Code instalado, con un compilador como MinGW. Desde la terminal de Visual Studio Code
 
 Clona el repositorio usando: git clone 
+
 Una vez clonado el repositorio, para ubicarte en la carpeta, usa el siguiente comando desde la terminal: cd proyecto
+
 Una vez ubicado en la carpeta, compilar el archivo usando en la terminal: g++ Controlador.cpp -o Controlador
+
 Una vez compilador ejecutar con el siguiente comando: ./Controlador
+
 El programa te presentará un menú interactivo donde podrás:
 
   Registrar nuevos usuarios.
@@ -50,10 +54,15 @@ Dinamicidad: Tanto en el arreglo de usuarios como en cada lista de amigos, el ma
 Las contribuciones son bienvenidas 😃 Sigue estos pasos para contribuir
 
 Haz un fork del proyecto. (Click en el boton Fork en la pagina original del repositorio)
+
 Crea una nueva rama usando: git checkout -b "nombre de la rama"
+
 Realiza los cambios necesarios y haz un commit. (git commit -m "Comentario"
+
 Sube los cambios. (git push -u origin "Nombre de la rama que creaste"
+
 Crea un pull request. (Es como una solicitud formal que le envías al dueño del proyecto)
+
 Contacto
 
 Luis Chirinos - Email - luisemilio2006@gmail.com
