@@ -151,3 +151,13 @@ void mostrarRedSocial(RedSocial* rs){
         cout<<"\n\n";
     }
 }
+
+void destruirRedSocial(RedSocial* rs){
+    for (int i=0;i<rs->numUsuarios; i++){
+        delete[] rs->usuarios[i].amigos;
+    }
+    delete[] rs->usuarios;
+    delete rs;
+    
+    cout<<"Memoria de la red social liberada\n";
+}
