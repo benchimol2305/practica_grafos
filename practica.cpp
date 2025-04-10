@@ -77,3 +77,17 @@ void registrarUsuario(RedSocial* rs){
     cout<< " el usuario se registro de manera correcta /n";
     
 }
+
+void redimensionarAmigos(Usuario* usuario) {
+    int nuevaCapacidad = usuario->capacidad * 2;
+    int* nuevosAmigos = new int[nuevaCapacidad];
+    
+   
+    for (int i = 0; i < usuario->numeAmigos; i++) {
+        nuevosAmigos[i] = usuario->amigos[i];
+    }
+    
+    delete[] usuario->amigos;
+    usuario->amigos = nuevosAmigos;
+    usuario->capacidad = nuevaCapacidad;
+}
