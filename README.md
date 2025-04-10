@@ -4,7 +4,7 @@ Esta practica consiste en una red social super sencilla, implementada en C++ usa
 
 Empecemos con la instalacion Partiendo de ya tener Visual Studio Code instalado, con un compilador como MinGW. Desde la terminal de Visual Studio Code
 
-Clona el repositorio usando: git clone 
+Clona el repositorio usando: git clone https://github.com/benchimol2305/practica_grafos.git
 
 Una vez clonado el repositorio, para ubicarte en la carpeta, usa el siguiente comando desde la terminal: cd proyecto
 
