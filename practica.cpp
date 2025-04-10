@@ -183,4 +183,15 @@ switch(opcion) {
             case 2:
                 agregarAmistad(rs);
                 break;
+            case 3:
+                mostrarRedSocial(rs);
+                break;
+            case 4:
+                destruirRedSocial(rs);
+                cout << "Saliendo...\n";
+                break;
+            default:
+                cout << "Opción inválida\n";
+        }
+    } while (opcion != 4);
 }
