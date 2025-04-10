@@ -175,3 +175,12 @@ void menu() {
         cout << "Seleccione una opción: ";
         cin >> opcion;
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+switch(opcion) {
+            case 1:
+                registrarUsuario(rs);
+                break;
+            case 2:
+                agregarAmistad(rs);
+                break;
+}
