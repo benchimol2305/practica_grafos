@@ -108,4 +108,10 @@ void agregarAmistad(RedSocial* rs) {
         cout<<"Error: Uno o ambos usuarios no existen\n";
         return;
     }
+    for (int i = 0; i < rs->usuarios[idx1].numeAmigos; i++) {
+        if (rs->usuarios[idx1].amigos[i] == idx2) {
+            cout << "Estos usuarios ya son amigos\n";
+            return;
+        }
+    }
 }
