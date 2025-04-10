@@ -195,3 +195,9 @@ switch(opcion) {
         }
     } while (opcion != 4);
 }
+
+int main() {
+    cout << "SISTEMA DE RED SOCIAL USANDO GRAFOS DINÁMICOS\n";
+    menu();
+    return 0;
+}
