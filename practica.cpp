@@ -161,3 +161,6 @@ void destruirRedSocial(RedSocial* rs){
     
     cout<<"Memoria de la red social liberada\n";
 }
+void menu() {
+    RedSocial* rs = crearRedSocial();
+    int opcion;
